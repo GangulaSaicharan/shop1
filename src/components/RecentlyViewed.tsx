@@ -64,9 +64,7 @@ export default function RecentlyViewed({ excludeId }: { excludeId?: string }) {
                 </p>
                 <div className="flex items-baseline gap-1 flex-wrap">
                   <span className="text-sm font-bold text-slate-900">₹{item.price.toFixed(0)}</span>
-                  {discount > 0 && (
-                    <span className="text-xs text-slate-400 line-through">₹{item.actualPrice.toFixed(0)}</span>
-                  )}
+                  <span className="text-xs text-slate-400 line-through">₹{item.actualPrice.toFixed(0)}</span>
                 </div>
               </div>
             </Link>

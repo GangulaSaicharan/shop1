@@ -1,5 +1,5 @@
 export const site = {
-  name: "ShopName",
+  name: "Padmalaya Electronics",
   tagline: "Quality Products",
   description: "Browse our collection of quality products",
   footerTagline: "Your trusted destination for quality products at the best prices. Shop with confidence.",
@@ -9,13 +9,13 @@ export const site = {
   },
 
   contact: {
-    address: "123 Main Street, City, State 00000",
+    address: "Main Road, Metpally",
     phone: "+1 (555) 000-0000",
     phoneHref: "tel:+15550000000",
     email: "contact@shopname.com",
     emailHref: "mailto:contact@shopname.com",
     whatsappHref: "https://wa.me/15550000000",
-    hours: "Mon – Sat · 9:00 AM – 7:00 PM",
+    hours: "Mon – Sat · 9:00 AM – 8:00 PM",
     hoursSub: "Closed on Sundays & public holidays",
   },
 

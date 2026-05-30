@@ -221,13 +221,11 @@ export default function ProductDetail({ product, variantId }: { product: Product
           {/* Price */}
           <div className="flex items-baseline gap-3 mb-4">
             <span className="text-3xl font-bold text-slate-900">₹{displayPrice.toFixed(2)}</span>
+            <span className="text-lg text-slate-400 line-through">₹{displayActualPrice.toFixed(2)}</span>
             {discount > 0 && (
-              <>
-                <span className="text-lg text-slate-400 line-through">₹{displayActualPrice.toFixed(2)}</span>
-                <span className="bg-red-100 text-red-600 text-sm font-bold px-2 py-0.5 rounded-lg">
-                  {discount}% OFF
-                </span>
-              </>
+              <span className="bg-red-100 text-red-600 text-sm font-bold px-2 py-0.5 rounded-lg">
+                {discount}% OFF
+              </span>
             )}
           </div>
 

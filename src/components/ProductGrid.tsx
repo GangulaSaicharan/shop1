@@ -295,9 +295,7 @@ export default function ProductGrid({
                     <div className="mt-auto pt-2.5 border-t border-slate-50 flex items-center justify-between">
                       <div>
                         <span className="font-bold text-slate-900 text-sm">₹{price.toFixed(0)}</span>
-                        {discount > 0 && (
-                          <span className="text-xs text-slate-400 line-through ml-1.5">₹{actualPrice.toFixed(0)}</span>
-                        )}
+                        <span className="text-xs text-slate-400 line-through ml-1.5">₹{actualPrice.toFixed(0)}</span>
                       </div>
                       <span className={cn(
                         "text-xs font-medium px-2 py-0.5 rounded-full",

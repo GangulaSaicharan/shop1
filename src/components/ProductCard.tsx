@@ -33,8 +33,8 @@ export default function ProductCard({ product, badge }: Props) {
   const primaryKey = attrKeys[0] ?? null;
   const primaryValues = primaryKey
     ? [...new Set(product.variants.flatMap((v) =>
-        v.attributes.filter((a) => a.key === primaryKey).map((a) => a.value)
-      ))]
+      v.attributes.filter((a) => a.key === primaryKey).map((a) => a.value)
+    ))]
     : [];
   const isColor = !!primaryKey?.toLowerCase().includes("color") || !!primaryKey?.toLowerCase().includes("colour");
   const MAX_SWATCHES = 5;
@@ -103,7 +103,7 @@ export default function ProductCard({ product, badge }: Props) {
         </h3>
 
         {/* Variant swatches */}
-        {primaryKey && primaryValues.length > 0 && (
+        {/* {primaryKey && primaryValues.length > 0 && (
           <div className="flex items-center gap-1.5 flex-wrap mb-2">
             {primaryValues.slice(0, MAX_SWATCHES).map((val) =>
               isColor ? (
@@ -126,23 +126,22 @@ export default function ProductCard({ product, badge }: Props) {
               <span className="text-xs text-slate-400 font-medium">+{overflow}</span>
             )}
           </div>
-        )}
+        )} */}
 
         <div className="mt-auto pt-2.5 border-t border-slate-50 flex items-center justify-between gap-2">
           <div className="min-w-0">
             <span className="font-bold text-slate-900 text-sm">
               {isRanged ? "From " : ""}₹{minPrice.toFixed(0)}
             </span>
-            {discount > 0 && !isRanged && (
+            {!isRanged && (
               <span className="text-xs text-slate-400 line-through ml-1.5">
                 ₹{effectiveMrp.toFixed(0)}
               </span>
             )}
           </div>
           <span
-            className={`text-xs font-medium px-2 py-0.5 rounded-full shrink-0 ${
-              inStock ? "bg-green-50 text-green-700" : "bg-slate-100 text-slate-400"
-            }`}
+            className={`text-xs font-medium px-2 py-0.5 rounded-full shrink-0 ${inStock ? "bg-green-50 text-green-700" : "bg-slate-100 text-slate-400"
+              }`}
           >
             {inStock ? "In Stock" : "Sold Out"}
           </span>
