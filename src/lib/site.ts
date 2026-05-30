@@ -10,20 +10,20 @@ export const site = {
 
   contact: {
     address: "Main Road, Metpally",
-    phone: "+1 (555) 000-0000",
-    phoneHref: "tel:+15550000000",
-    email: "contact@shopname.com",
-    emailHref: "mailto:contact@shopname.com",
-    whatsappHref: "https://wa.me/15550000000",
+    phone: "+91 85558 06943",
+    phoneHref: "tel:+918555806943",
+    email: "padmalayaelectronics9@gmail.com",
+    emailHref: "mailto:padmalayaelectronics9@gmail.com",
+    whatsappHref: "https://wa.me/918555806943",
     hours: "Mon – Sat · 9:00 AM – 8:00 PM",
     hoursSub: "Closed on Sundays & public holidays",
   },
 
   social: {
-    whatsapp: "https://wa.me/15550000000",
-    instagram: "https://instagram.com/shopname",
-    facebook: "https://facebook.com/shopname",
-    twitter: "https://twitter.com/shopname",
-    youtube: "https://youtube.com/@shopname",
+    whatsapp: "https://wa.me/918555806943",
+    instagram: "https://instagram.com/padmalaya_electronics",
+    facebook: "https://facebook.com/padmalaya_electronics",
+    twitter: "https://twitter.com/padmalaya_electronics",
+    youtube: "https://youtube.com/@padmalaya_electronics",
   },
 };
